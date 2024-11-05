@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DonorLink</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splashScreen" class="screen">
+        <h1>DonorLink</h1>
+        <div class="splash-logo">
+            <!-- Hands and Heart Illustration -->
+            <img src="heart_hands.svg" alt="Heart and Hands" />
+        </div>
+    </div>
+
+    <!-- Login/Signup Choice Screen -->
+    <div id="choiceScreen" class="screen hidden">
+        <h2>Log In / Sign Up</h2>
+        <button onclick="showLoginForm('donor')">Donor</button>
+        <button onclick="showLoginForm('bloodBank')">Blood Bank</button>
+    </div>
+
+    <!-- Login/Signup Form Screen -->
+    <div id="formScreen" class="screen hidden">
+        <div class="form-toggle">
+            <button id="loginTab" onclick="showTab('login')">Log In</button>
+            <button id="signupTab" onclick="showTab('signup')">Sign Up</button>
+        </div>
+        
+        <div id="loginForm" class="form-content">
+            <input type="text" placeholder="Phone Number">
+            <input type="password" placeholder="Password">
+            <button>Log In</button>
+        </div>
+
+        <div id="signupForm" class="form-content hidden">
+            <input type="text" placeholder="Phone Number">
+            <input type="password" placeholder="Password">
+            <button>Sign Up</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
