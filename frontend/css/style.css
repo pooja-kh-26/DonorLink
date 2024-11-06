@@ -1,0 +1,379 @@
+/* Basic Reset and Font Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* White background for the page */
+    color: #1d3557; /* Dark Blue for text */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Section */
+.header {
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.site-name {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1d3557; /* Dark Blue */
+}
+
+/* Navigation Links */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.nav-item {
+    background-color: #e63946; /* Red background */
+    padding: 25px;
+    border-radius: 10px;
+    width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #a8dadc; /* Sky Blue when hovered */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff; /* White text */
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    color: #1d3557; /* Dark Blue */
+}
+
+.main-content p {
+    font-size: 1.2rem;
+    color: #457b9d; /* Blue for text description */
+}
+
+/* Dashboard Section */
+.dashboard-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.option-card {
+    background-color: #f3f3f3;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+}
+
+.option-card h3 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.option-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.option-card a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff4d4d;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.option-card a:hover {
+    background-color: #e04343;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #003366;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #A8dadc; /* Light blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Wrapper to center the form container */
+.wrapper {
+  width: 100%;
+  max-width: 450px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Title Text */
+.title-text {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #003366;
+}
+
+.login {
+  color: #457b9d; /* Blue color for the login title */
+}
+
+.signup {
+  color: #e63946; /* Red color for the signup title */
+}
+
+/* Form Container */
+.form-container {
+  padding: 30px;
+}
+
+/* Slide Controls */
+.slide-controls {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.slide-controls input[type="radio"] {
+  display: none;
+}
+
+.slide-controls label {
+  font-size: 20px;
+  font-weight: 500;
+  color: #003366;
+  cursor: pointer;
+}
+
+.slide-controls .slider-tab {
+  height: 3px;
+  width: 50%;
+  background-color: #003366;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+
+#login:checked ~ .form-container .slider-tab {
+  left: 0;
+}
+
+#signup:checked ~ .form-container .slider-tab {
+  left: 50%;
+}
+
+/* Form Styling */
+.form-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: margin-left 0.3s ease;
+}
+
+form {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+form.login {
+  display: block;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #003366;
+}
+
+/* Button Styling */
+.field.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.field .btn-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #e63946, #f1faee);
+  opacity: 0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.field input[type="submit"] {
+  background-color: #003366;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.field input[type="submit"]:hover {
+  background-color: #457b9d;
+}
+
+.field input[type="submit"]:active {
+  background-color: #003366;
+}
+
+.field.btn:hover .btn-layer {
+  opacity: 1;
+}
+
+/* Links and Text */
+.pass-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pass-link a {
+  font-size: 14px;
+  color: #003366;
+  text-decoration: none;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-link a {
+  color: #e63946;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .title-text {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .slide-controls {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .slide-controls label {
+    margin-bottom: 10px;
+  }
+}
+.nav-item {
+    background-color: #e63946; /* Original red background */
+    padding: 25px;
+    border-radius: 10px;
+    width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #457b9d; /* Sky Blue when hovered */
+}
+
+.nav-item:active {
+    background-color: #457b9d; /* Change to #457b9d when clicked */
+}
+
